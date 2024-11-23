@@ -1,0 +1,105 @@
+/* Import Font */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #fcb69f, #ff6f61, #f6d365);
+  background-size: 400% 400%;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  animation: gradientBG 10s ease infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Container Styling */
+.container {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  padding: 30px;
+  max-width: 500px;
+  text-align: center;
+}
+
+/* Title Styling */
+h1 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 3rem;
+  color: #ffe6e6;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  transition: transform 0.5s ease;
+}
+
+h1:hover {
+  transform: scale(1.1);
+  color: #ffd1d1;
+}
+
+/* Paragraph Styling */
+p {
+  font-size: 18px;
+  margin: 10px 0;
+  line-height: 1.6;
+}
+
+/* Heart Icon Styling */
+.heart-icon {
+  font-size: 50px;
+  margin: 20px 0;
+  animation: pulse 1.5s infinite;
+  cursor: pointer;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.heart-icon:hover {
+  transform: scale(1.2);
+  color: #ff6f61;
+}
+
+/* Button Styling */
+button {
+  margin-top: 20px;
+  padding: 12px 25px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #ff6f61;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background-color: #e63946;
+  transform: scale(1.1);
+}
+
+/* Animations */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
